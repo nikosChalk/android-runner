@@ -29,5 +29,5 @@ def main(device: Device, *args, **kwargs) -> None:
     current_run: Dict = experiment.get_experiment()
     LOGGER.debug(current_run)
     
-    for i in range(3):
+    for _ in range(3):
         tap(device, 543, 1188)
